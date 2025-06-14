@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Super CoinRunner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2>Loading CoinRunner...</h2>
+            <div class="loading-progress" id="loading-progress">0%</div>
+        </div>
+    </div>
+
+    <div class="game-container" id="game-container">
+        <div class="game-header">
+            <div class="logo">SUPER COINRUNNER</div>
+            <div class="game-info">
+                <div class="score-container">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png" class="icon">
+                    <span id="score">0</span>
+                </div>
+                <div class="level-container">
+                    <span>LVL</span>
+                    <span id="level">1</span>
+                </div>
+                <div class="high-score-container">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png" class="icon">
+                    <span id="high-score">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-screen" id="game-screen">
+            <div class="sky"></div>
+            <div class="clouds"></div>
+            <div class="ground"></div>
+            <div class="character" id="character">
+                <div class="character-body"></div>
+                <div class="character-eye"></div>
+                <div class="character-arm"></div>
+                <div class="character-leg"></div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="jump-btn" class="action-btn">
+                <span>JUMP</span>
+                <small>(SPACE)</small>
+            </button>
+            <button id="start-btn" class="primary-btn">START</button>
+        </div>
+        
+        <div class="game-over" id="game-over">
+            <div class="game-over-content">
+                <h2>GAME OVER</h2>
+                <div class="final-score">
+                    <span>SCORE:</span>
+                    <span id="final-score">0</span>
+                </div>
+                <div class="final-level">
+                    <span>LEVEL:</span>
+                    <span id="final-level">1</span>
+                </div>
+                <button id="restart-btn" class="primary-btn">PLAY AGAIN</button>
+            </div>
+        </div>
+
+        <div class="level-up" id="level-up">
+            <div class="level-up-content">
+                <h2>LEVEL <span id="new-level">2</span>!</h2>
+                <p>Jump boost activated!</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
